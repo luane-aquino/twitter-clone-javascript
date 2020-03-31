@@ -14,7 +14,6 @@ class Usuario {
     this.userLikes = document.getElementById("user-likes")
   }
 
-  // TODO organizar pastas usuario: json e js sobre aquilo
   mostraUsuario(users) {
     const user = users[0]
 

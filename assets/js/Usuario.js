@@ -11,6 +11,8 @@ class Usuario {
     let usuario = ''
     let usuarioStats = ''
 
+    // TODO remover esse html daqui
+    // TODO organizar pastas usuario: json e js sobre aquilo
     usuario = `
       <!-- Left column -->
       <div class="profile-header">

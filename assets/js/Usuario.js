@@ -1,59 +1,34 @@
 class Usuario {
   constructor() {
-    const showUsuario = document.getElementById("profile")
-    this.profile = showUsuario
-    const showProfileStats = document.getElementById("profile-stats")
-    this.profileStats = showProfileStats
+    // profile info
+    this.nome = document.getElementById("nome")
+    this.usuario = document.getElementById("usuario")
+    this.website = document.getElementById("website")
+    this.local = document.getElementById("local")
+    this.cadastro = document.getElementById("cadastro")
+    this.btnNome = document.getElementById("btn-nome")
+    // user stats
+    this.tweetsQuantidade = document.getElementById("tweets-quantidade")
+    this.seguindoQuantidade = document.getElementById("seguindo-quantidade")
+    this.seguidoresQuantidade = document.getElementById("seguidores-quantidade")
+    this.userLikes = document.getElementById("user-likes")
   }
 
+  // TODO organizar pastas usuario: json e js sobre aquilo
   mostraUsuario(users) {
     const user = users[0]
-    let usuario = ''
-    let usuarioStats = ''
 
-    // TODO remover esse html daqui
-    // TODO organizar pastas usuario: json e js sobre aquilo
-    usuario = `
-      <!-- Left column -->
-      <div class="profile-header">
-        <!-- Header information -->
-        <h3 class="profile-fullname"><a>${user.nome}<a></h3>
-        <h2 class="profile-element"><a>@${user.usuario}</a></h2>
-        <a class="profile-element profile-website" hrerf=""><i
-            class="octicon octicon-link"></i>&nbsp;${user.website}</a>
-        <a class="profile-element profile-website" hrerf=""><i
-            class="octicon octicon-location"></i>&nbsp;${user.local}</a>
-        <h2 class="profile-element"><i class="octicon octicon-calendar"></i>Joined ${user.cadastro}</h2>
-        <button class="btn btn-search-bar tweet-to-btn">Tweet to ${user.nome}</button>
-      </div>`
-
-    usuarioStats = `
-      <li class="profile-stats-item-active">
-        <a>
-          <span class="profile-stats-item profile-stats-item-label">Tweets</span>
-          <span class="profile-stats-item profile-stats-item-number">${user.quantidade_tweets}</span>
-        </a>
-      </li>
-      <li>
-        <a>
-          <span class="profile-stats-item profile-stats-item-label">Following</span>
-          <span class="profile-stats-item profile-stats-item-number">${user.seguindo}</span>
-        </a>
-      </li>
-      <li>
-        <a>
-          <span class="profile-stats-item profile-stats-item-label">Followers</span>
-          <span class="profile-stats-item profile-stats-item-number">${user.seguidores}</span>
-        </a>
-      </li>
-      <li>
-        <a>
-          <span class="profile-stats-item profile-stats-item-label">Likes</span>
-          <span class="profile-stats-item profile-stats-item-number">${user.likes}</span>
-        </a>
-      </li> `
-
-    this.profile.innerHTML = usuario
-    this.profileStats.innerHTML = usuarioStats
+    // profile info
+    this.nome.innerHTML = `<a>${user.nome}<a>`
+    this.usuario.innerHTML = `<a>@${user.usuario}</a>`
+    this.website.innerHTML = `<i class="octicon octicon-link"></i>&nbsp;${user.website}`
+    this.local.innerHTML = `<i class="octicon octicon-location"></i>&nbsp;${user.local}`
+    this.cadastro.innerHTML = `<i class="octicon octicon-calendar"></i>Joined ${user.cadastro}`
+    this.btnNome.innerHTML = `Tweet to ${user.nome}`
+    // user stats
+    this.tweetsQuantidade.innerHTML = `${user.quantidade_tweets}`
+    this.seguindoQuantidade.innerHTML = `${user.seguindo}`
+    this.seguidoresQuantidade.innerHTML = `${user.seguidores}`
+    this.userLikes.innerHTML = `${user.likes}`
   }
 }

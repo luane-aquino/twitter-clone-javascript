@@ -66,7 +66,30 @@
           </div>
           <div class="col-6">
             <ul id="profile-stats">
-              
+              <li class="profile-stats-item-active">
+                <a>
+                  <span class="profile-stats-item profile-stats-item-label">Tweets</span>
+                  <span class="profile-stats-item profile-stats-item-number" id="tweets-quantidade"></span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="profile-stats-item profile-stats-item-label">Following</span>
+                  <span class="profile-stats-item profile-stats-item-number" id="seguindo-quantidade"></span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="profile-stats-item profile-stats-item-label">Followers</span>
+                  <span class="profile-stats-item profile-stats-item-number" id="seguidores-quantidade"></span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="profile-stats-item profile-stats-item-label">Likes</span>
+                  <span class="profile-stats-item profile-stats-item-number" id="user-likes"></span>
+                </a>
+              </li>
             </ul>
           </div>
           <div class="col">
@@ -78,9 +101,18 @@
     <div class="container main-content">
       <div class="row">
         <div class="col profile-col" id="profile">
-          
+          <!-- Left column -->
+          <div class="profile-header">
+            <!-- Header information -->
+            <h3 class="profile-fullname" id="nome"></h3>
+            <h2 class="profile-element" id="usuario"></h2>
+            <a class="profile-element profile-website" hrerf="" id="website"></a>
+            <a class="profile-element profile-website" hrerf="" id="local"></a>
+            <h2 class="profile-element" id="cadastro"></h2>
+            <button class="btn btn-search-bar tweet-to-btn" id="btn-nome"></button>
+          </div>
         </div>
-        <!-- End; Left column -->
+        <!-- End: Left column -->
         <!-- Center content column -->
         <div class="col-6">
           <ol class="tweet-list" id="tweet-list">

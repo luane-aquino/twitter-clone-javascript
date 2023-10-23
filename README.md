@@ -2,6 +2,9 @@
 
 A simple twitter clone using Javascript. Demo link: https://luane-aquino.github.io/twitter-clone-javascript/index.html
 
+## Screenshot
+<img width="1897" alt="image" src="https://github.com/luane-aquino/twitter-clone-javascript/assets/10707843/6de2b837-0866-4dd8-8111-4cb7c1952914">
+
 ## Built With
 
 * Javascript
